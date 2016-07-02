@@ -13,6 +13,8 @@
 		201C376F1D28327E00A91A22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201C376E1D28327E00A91A22 /* Assets.xcassets */; };
 		201C37721D28327E00A91A22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201C37701D28327E00A91A22 /* LaunchScreen.storyboard */; };
 		201C377D1D28327E00A91A22 /* RetainCycleTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201C377C1D28327E00A91A22 /* RetainCycleTestTests.swift */; };
+		201C37881D28345B00A91A22 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201C37871D28345B00A91A22 /* Cat.swift */; };
+		201C378A1D2835D800A91A22 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201C37891D2835D800A91A22 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		201C37781D28327E00A91A22 /* RetainCycleTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetainCycleTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		201C377C1D28327E00A91A22 /* RetainCycleTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetainCycleTestTests.swift; sourceTree = "<group>"; };
 		201C377E1D28327E00A91A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201C37871D28345B00A91A22 /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		201C37891D2835D800A91A22 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				201C37671D28327E00A91A22 /* AppDelegate.swift */,
+				201C37891D2835D800A91A22 /* SecondViewController.swift */,
 				201C37691D28327E00A91A22 /* ViewController.swift */,
 				201C376B1D28327E00A91A22 /* Main.storyboard */,
 				201C376E1D28327E00A91A22 /* Assets.xcassets */,
 				201C37701D28327E00A91A22 /* LaunchScreen.storyboard */,
 				201C37731D28327E00A91A22 /* Info.plist */,
+				201C37871D28345B00A91A22 /* Cat.swift */,
 			);
 			path = RetainCycleTest;
 			sourceTree = "<group>";
@@ -203,8 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201C378A1D2835D800A91A22 /* SecondViewController.swift in Sources */,
 				201C376A1D28327E00A91A22 /* ViewController.swift in Sources */,
 				201C37681D28327E00A91A22 /* AppDelegate.swift in Sources */,
+				201C37881D28345B00A91A22 /* Cat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

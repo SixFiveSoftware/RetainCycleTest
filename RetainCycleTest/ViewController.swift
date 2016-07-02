@@ -8,18 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
+  let cat = Cat(color: .orange)
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+  func doSomething(with cat: Cat) {
+    print("\(cat)")
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-
+  @IBOutlet var butt: UIButton!
 }
 
+//MARK: internal
+extension ViewController {
+
+  override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    guard let destination = segue.destinationViewController as? SecondViewController else { fatalError() }
+    destination.inject(cat: cat)
+    destination.someHandler = { _cat in self.doSomething(with: _cat) }
+  }
+}
